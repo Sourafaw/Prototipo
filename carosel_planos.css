@@ -1,0 +1,165 @@
+
+#title_planos{
+color: #3c3cb5;
+font-size: var(--fonsztitle-font-size);
+margin-top: 34px;
+text-align: center;
+margin-bottom: 20px;
+margin-inline: 15%;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.carosel_planos{
+  overflow: hidden;
+  margin-top: 1em;
+  /* background: rgba(7, 158, 7, 0.795); */
+  height: 760px;
+}
+
+.card-carousel {
+  --card-width: 80%;
+--card-max-width: 280px;
+--card-height: 350px;
+--carousel-min-width: 600px;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: var(--card-height );
+  min-width: var(--carousel-min-width);
+  transition: filter .3s ease;
+}
+
+
+
+/* @media screen and (max-width: 360px) {
+  .card-carousel {
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+  }
+} */
+
+.card-carousel.smooth-return {
+  transition: all .2s ease;
+}
+
+.card-carousel .card {
+  background: whitesmoke;
+  text-align: center;
+  /* max-width: var(--card-max-width);
+  min-width: 250px;
+  height: var(--card-height); */
+  /width: var(--card-width); 
+  max-width: 420px; 
+  padding: 0.6em; 
+  min-width: 390px;
+  height: 540px; 
+  position: absolute;
+  margin: 0 auto;
+  color: rgba(0,0,0,.5);
+  transition: inherit;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  border-radius: 1em;
+  /* filter: brightness(.9); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* .card.highlight {
+  filter: brightness(1)
+} */
+
+
+.card:nth-of-type(1) .image-carosel {
+    background-image: url("Midias/Slides/slid1.png");
+}
+ 
+.card:nth-of-type(2) .image-carosel {
+  background-image: url("Midias/Slides/slid2.png")
+}
+
+.card:nth-of-type(3) .image-carosel {
+  background-image: url("Midias/Slides/slid3.png")
+}
+.card:nth-of-type(4) .image-carosel {
+  background-image: url("Midias/Slides/slid4.png")
+}
+.card:nth-of-type(5) .image-carosel {
+  background-image: url("Midias/Slides/slid5.png")
+}
+
+
+
+.image-carosel {
+  width: 98%;
+  height: 98%;
+  position: relative;
+  background-size: cover;
+  /* margin-bottom: 1em; */
+  /* padding: 1em; */
+  /* -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+   */
+   
+}
+
+#bt_plano{
+  position: absolute;
+  width: 310px;
+  height: 38px;
+  font-size: 16px;
+  top: 82%;
+  padding: 0 0;
+}
+
+#bt_plano_just{
+  position: absolute;
+  width: 310px;
+  height: 38px;
+  top: 86.5%;
+  font-size: 16px;
+  padding: 0 0;
+}
+
+
+@media screen and (max-width: 460px) {
+  .card-carousel {
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+  }
+
+
+.card-carousel .card {
+  max-width: var(--card-max-width);
+  min-width: 255px;
+  height: var(--card-height);
+}
+
+.containercr {
+  height: 500px;
+}
+
+#bt_plano{
+  width: 210px;
+  height: 30px;
+  top: 75.8%;
+}
+
+#bt_plano_just{
+  width: 210px;
+  height: 30px;
+  top: 80%;
+ 
+}
+}
+
+/* --card-width: 80%;
+--card-max-width: 280px;
+--card-height: 350px;
+--carousel-min-width: 600px; */
