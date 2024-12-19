@@ -234,6 +234,7 @@ video {
   display: none; /* Card inicialmente invisível */
   justify-content: center;
   align-items: center;
+  z-index: 999;
   
   
 }
@@ -244,24 +245,28 @@ video {
   width: 90%;
   max-width: 500px;
   padding: 20px;
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
   border-radius: 10px;
   position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card-tbr h2 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: #333;
+  font-size: 2.8vh;
 }
 
 .tbr_imp label {
   display: block;
-  margin-top: 10px;
+  margin-top: 6px;
   font-weight: bold;
   color: black;
+  font-size: 2vh;
 }
 
-.tbr_imp input, textarea, select {
+.tbr_imp > input, textarea, select {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
@@ -269,19 +274,22 @@ video {
   border-radius: 5px;
 }
 
-/* button#submitBtn {
-  margin-top: 15px;
-  padding: 10px;
+
+button#submitBtn {
+  margin-top: 10px;
+  padding: 6px;
   background-color: #cddc39;
   color: #333;
   border: none;
   font-weight: bold;
   cursor: pointer;
+ 
+  
 }
 
 button#submitBtn:hover {
   background-color: #b3c233;
-} */
+}
 
 /* Botão de fechar */
 .close-btn {
@@ -501,6 +509,36 @@ c.ontent-servc p {
   color: #333;
 }
 
+#title_srviço-01{
+  color: #C4FF4B ;
+  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-width: 1px;
+}
+
+#title_srviço-02{
+  color: #AB55FE ;
+  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-width: 1px;
+}
+
+#title_srviço-03{
+  color: #161E5C ;
+  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-width: 1px;
+}
+
+#title_srviço-04{
+  color: #FF821C ;
+  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-width: 1px;
+}
+
+#title_srviço-05{
+  color: #000000 ;
+  -webkit-text-stroke-color: #000000 ;
+  -webkit-text-stroke-width: 1px;
+}
+
 /*-------------------------------- Velocidade ideal ------------------------------*/
 
 .card-corpo {
@@ -519,8 +557,9 @@ c.ontent-servc p {
   background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(60,60,181,1) 50%, rgba(11,114,135,1) 100%);
    color: #fff;
   padding: 20px;
+  padding-inline: 15vw;
   border-radius: 10px;
-  width: 80%;
+  width: 100%;
   height: auto;
   margin-top: 30px;
   text-align: center;
@@ -804,7 +843,7 @@ input[type="range"] {
   outline: 1.5px solid black;
 }
 
-form{
+.elemeto_box_coment form{
   margin: 0 auto;
   display: flex;
   width: 95%;
@@ -814,7 +853,7 @@ form{
   color: white;
 }
 
-form input, form textarea {
+.elemeto_box_coment form input, .elemeto_box_coment form textarea {
   width: 100%;
   background-color: #2579d3dc;
   border: 0;
@@ -827,16 +866,16 @@ form input, form textarea {
   outline: 2px solid #2b73c5dc;
 }
 
-form textarea{
+.elemeto_box_coment form textarea{
   resize: none;
   max-height: 300px;
 }
 
-form input::placeholder{
+.elemeto_box_coment form input::placeholder{
   color: #d1d0d0;
 }
 
-form textarea::placeholder{
+.elemeto_box_coment form textarea::placeholder{
   color: #d1d0d0;
 }
 
@@ -923,8 +962,19 @@ form textarea::placeholder{
 
 
 /* ----------------------------------------------------------------------- */
+@media screen and (max-width: 1600px) {
+  .man_page {
+    width: 98%;
+  }
 
-@media screen and (max-width: 840px) {
+  .img_service_logo img {
+    width: 230px;
+    height: 125px;
+  }
+}
+
+/* ----------------------------------------------------------------------- */
+@media screen and (max-width: 640px) {
 
   .flex {
     flex-direction: column;
@@ -965,9 +1015,6 @@ form textarea::placeholder{
   z-index: 99;
   }
 
-  .item-up{
-  display: none;
-  }
 
   .bt_minha_lig{
   display: none;
@@ -1025,6 +1072,17 @@ form textarea::placeholder{
     height: 380px;
   }
 
+  #title_planos{
+    font-size: 5px;
+  }
+
+  .carosel_planos{
+    height: 580px;
+  }
+
+  #title_planos{
+    font-size: 6vw;
+  }
   /* ---------------------- cVelocidade ideal -------------------- */
 
   .card-vide{
