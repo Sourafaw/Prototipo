@@ -435,9 +435,21 @@ button#submitBtn:hover {
 background: linear-gradient(34deg, rgba(22,32,91,1) 0%, rgba(60,60,181,1) 50%, rgba(11,114,135,1) 100%);
 margin-top: 100px;
   margin-bottom: 40px;
+  padding: 50px;
+ 
+}
+
+.title_elemente{
+  color: white;
+  font-size: 24px;
+  padding-left: 0;
+}
+
+.organize-elemente{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 100%;
 }
 
 .item-post{
@@ -1041,6 +1053,13 @@ input[type="range"] {
     height: 800px;
   }
 
+.organize-elemente {
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
   /* ---------------------- produtos e servisos ------------------------ */
 
   .item img {
@@ -1067,23 +1086,26 @@ input[type="range"] {
   }
 
   .card {
-    flex: 0 0 95%;
-    max-width: 300px;
-    height: 380px;
+    flex: 0 1 auto; /* Permite que o card ocupe a largura correta */
+    max-width: 600px; /* Defina um tamanho máximo se necessário */
+    width: 100%; /* Permite que o card ocupe 100% do espaço disponível no container */
+    height: 780px; /* Ajuste a altura conforme necessário */
+    margin: 0 auto; /* Centraliza o card dentro do container */
   }
 
   #title_planos{
     font-size: 5px;
   }
 
-  .carosel_planos{
-    height: 580px;
+  .carosel_planos {
+    height: 580px; /* Defina a altura fixa ou deixe dinâmica se necessário */
+    overflow: hidden; /* Garante que o conteúdo não transborde */
   }
 
   #title_planos{
     font-size: 6vw;
   }
-  /* ---------------------- cVelocidade ideal -------------------- */
+  /* ---------------------- Velocidade ideal -------------------- */
 
   .card-vide{
     width: 100%;
