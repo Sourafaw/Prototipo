@@ -1,10 +1,15 @@
 // Seleciona os elementos do DOM
 const openFormBtn = document.getElementById("openFormBtn");
+const openFormBtnmobi = document.getElementById("openFormBtnmobi");
 const cardContainer = document.getElementById("cardContainer");
 const closeCard = document.getElementById("closeCard");
 
 // Exibe o card ao clicar no botão "Trabalhe Conosco"
 openFormBtn.addEventListener("click", () => {
+    cardContainer.style.display = "flex"; // Torna o card visível
+});
+
+openFormBtnmobi.addEventListener("click", () => {
     cardContainer.style.display = "flex"; // Torna o card visível
 });
 
