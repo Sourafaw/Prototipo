@@ -11,19 +11,37 @@ const needle = document.querySelector('.meter-needle');
 function calculateSpeed() {
   let speed = 200; // Velocidade base
 
-  if (socialMedia.checked) speed += 20;
-  if (work.checked) speed += 50;
-  if (videos.checked) speed += 100;
-  if (games.checked) speed += 150;
+  // Valores agregados baseados na quantidade de dispositivos conectados
+  const deviceValue = calculateDeviceImpact(devices.value);
+
+  if (socialMedia.checked) speed += deviceValue.socialMedia;
+  if (work.checked) speed += deviceValue.work;
+  if (videos.checked) speed += deviceValue.videos;
+  if (games.checked) speed += deviceValue.games;
 
   // Aumenta com a quantidade de dispositivos
-  speed += devices.value * 10;
+  // speed += devices.value * 10;
 
   // Ajusta visualização
   if (speed > 1000) speed = 1000; // Limite de 1000 MEGA
 
   speedDisplay.textContent = `${speed}MEGA`;
   updateNeedle(speed);
+}
+
+// Função para calcular impacto baseado no número de dispositivos
+function calculateDeviceImpact(deviceCount) {
+  let values = { socialMedia: 20, work: 50, videos: 100, games: 150 };
+
+  if (deviceCount <= 4) {
+    values = { socialMedia: 10, work: 30, videos: 70, games: 100 };
+  } else if (deviceCount > 4 && deviceCount <= 7) {
+    values = { socialMedia: 15, work: 40, videos: 85, games: 120 };
+  } else if (deviceCount > 7) {
+    values = { socialMedia: 20, work: 50, videos: 100, games: 150 };
+  }
+
+  return values;
 }
 
 // Atualiza a agulha do velocímetro
