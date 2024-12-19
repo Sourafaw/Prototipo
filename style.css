@@ -626,7 +626,7 @@ input[type="range"] {
 }
 
 /*-------------------------------- consutores ------------------------------*/
-
+/* 
 .representantes {
   height: auto;
   width: 100%;
@@ -725,7 +725,7 @@ input[type="range"] {
 .grande_box{
   display: flex;
   justify-content: space-around;
-}
+} */
 
 /*---------------------slider----------------------*/
 
@@ -1052,7 +1052,7 @@ input[type="range"] {
     flex-direction: column;
   }
 
-  .content {
+  .content-servc {
     margin-top: 10px;
     margin-bottom: 10vw;
   }
