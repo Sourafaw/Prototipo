@@ -1,7 +1,7 @@
 
 #title_planos{
 color: #3c3cb5;
-font-size: var(--fonsztitle-font-size);
+font-size: 30px;
 margin-top: 34px;
 text-align: center;
 margin-bottom: 20px;
@@ -69,6 +69,17 @@ display: flex;
   align-items: center;
   justify-content: center;
   
+}
+
+.card-carousel {
+    position: relative; /* Certifica que o container seja o referencial */
+}
+
+.card-carousel .card {
+  position: absolute;
+  left: 50%; /* Posiciona o centro do card no meio do container */
+  transform: translateX(-50%); /* Centraliza o card ao redor do ponto de 50% */
+  margin: 0 auto; /* Garante que não haja margens deslocando o card */
 }
 
 /* .card.highlight {
