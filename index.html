@@ -115,39 +115,38 @@
       <div class="card-tbr">
           <span id="closeCard" class="close-btn">&times;</span>
           <h2>Trabalhe Conosco</h2>
-          <form class="tbr_imp" id="jobForm">
-              <!-- Conteúdo do formulário -->
-                <label for="name">NOME</label>
-                <input type="text" id="name" placeholder="Digite seu nome" required>
-  
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" placeholder="Digite seu email" required>
-  
-                <label for="phone">TELEFONE</label>
-                <input type="tel" id="phone" placeholder="Digite seu telefone" required>
-  
-                <label for="resume">CURRÍCULO</label>
-                <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
-  
-                <label for="interest">ÁREA DE INTERESSE</label>
-                <select id="interest" required>
-                    <option value="Comercial">Comercial</option>
-                    <option value="Marketing">Marketing</option>
-                    <option value="Financeiro">Desenvolvimento</option>
-                    <option value="Financeiro">Financeiro</option>
-                    <option value="Financeiro">Tecnico de redes</option>
-                </select>
-  
-                <label for="message">MENSAGEM</label>
-                <textarea id="message" rows="5" placeholder="Digite sua mensagem"></textarea>
-  
-                <label for="captcha">What is 1 × 7?</label>
-                <input type="number" id="captcha" placeholder="Digite sua resposta" required>
-  
-                <button type="submit" id="submitBtn">ENVIAR</button>
-            </form>
-        </div>
-    </div>
+          <form class="tbr_imp" id="jobForm" method="POST" action="Formulario trabalhe conosco.php" enctype="multipart/form-data">
+            <!-- Conteúdo do formulário -->
+            <label for="name">NOME</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+        
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+        
+            <label for="phone">TELEFONE</label>
+            <input type="tel" name="phone" id="phone" placeholder="Digite seu telefone" required>
+        
+            <label for="resume">CURRÍCULO</label>
+            <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required>
+        
+            <label for="interest">ÁREA DE INTERESSE</label>
+            <select name="interest" id="interest" required>
+                <option value="Comercial">Comercial</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Desenvolvimento">Desenvolvimento</option>
+                <option value="Financeiro">Financeiro</option>
+                <option value="Tecnico de redes">Técnico de Redes</option>
+            </select>
+        
+            <label for="message">MENSAGEM</label>
+            <textarea name="message" id="message" rows="5" placeholder="Digite sua mensagem"></textarea>
+        
+            <label for="captcha">What is 1 × 7?</label>
+            <input type="number" name="captcha" id="captcha" placeholder="Digite sua resposta" required>
+        
+            <button type="submit" id="submitBtn">ENVIAR</button>
+        </form>
+        
     <script src="testetre.js"></script>
       
 
