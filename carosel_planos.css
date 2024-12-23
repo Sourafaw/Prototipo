@@ -21,7 +21,7 @@ display: flex;
 .card-carousel {
   --card-width: 80%;
 --card-max-width: 280px;
---card-height: 350px;
+--card-height: 360px;
 --carousel-min-width: 600px;
   z-index: 1;
   position: relative;
@@ -46,7 +46,7 @@ display: flex;
 
 .card-carousel .card {
   background: whitesmoke;
-  text-align: center;
+  /* text-align: center; */
   /* max-width: var(--card-max-width);
   min-width: 250px;
   height: var(--card-height); */
@@ -54,7 +54,7 @@ display: flex;
   max-width: 420px; 
   padding: 0.6em; 
   min-width: 390px;
-  height: 540px; 
+  height: 500px; 
   position: absolute;
   margin: 0 auto;
   color: rgba(0,0,0,.5);
@@ -64,10 +64,10 @@ display: flex;
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
   border-radius: 1em;
   /* filter: brightness(.9); */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   
 }
 
@@ -121,7 +121,7 @@ box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
    
 }
 
-#bt_plano{
+/* #bt_plano{
   position: absolute;
   width: 310px;
   height: 38px;
@@ -137,6 +137,125 @@ box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
   top: 83.5%;
   font-size: 16px;
   padding: 0 0;
+} */
+
+.img_slid_carosel{
+  width: 70px;
+  
+  
+}
+
+.carousel {
+  width: 360px;
+  max-height: 390px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+ 
+  box-sizing: border-box;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  outline: 5px solid rgb(0, 0, 0);
+ 
+}
+
+.carousel-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.carousel-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.carousel-item ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.carousel-item .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #0070f3;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.carousel-item button {
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  background-color: #0070f3;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+
+.carousel-item button:hover {
+  background-color: #005bb5;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-buttons button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel-buttons button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.imagem_grup{
+  display: flex;
+  gap: 3px;
+
+}
+
+h2{
+  font-size: 4vh;
+  margin: 8px;
+  font-weight: bold;
+  color: #006CDA;
+
+}
+
+
+
+.carousel-item h4 {
+  margin: 2px;
+}
+
+.rodp{
+  top: 200px;
+  
 }
 
 
