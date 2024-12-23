@@ -1087,6 +1087,7 @@ input[type="range"] {
     max-width: 100%;
     height: auto;
     --carousel-min-width: 465px;
+    --card-height: 495px;
   }
 
   .card {
