@@ -1086,7 +1086,7 @@ input[type="range"] {
     flex-direction: row;
     max-width: 100%;
     height: auto;
-    --carousel-min-width: 410px;
+    --carousel-min-width: 0px;
     --card-height: 495px;
   }
 
