@@ -9,7 +9,7 @@ const needle = document.querySelector('.meter-needle');
 
 // Função para calcular velocidade
 function calculateSpeed() {
-  let speed = 200; // Velocidade base
+  let speed = 0; // Velocidade base
 
   // Valores agregados baseados na quantidade de dispositivos conectados
   const deviceValue = calculateDeviceImpact(devices.value);
@@ -29,16 +29,19 @@ function calculateSpeed() {
   updateNeedle(speed);
 }
 
+document.getElementById("socialMedia").checked = true;
+document.getElementById("socialMedia").disabled = true;
+
 // Função para calcular impacto baseado no número de dispositivos
 function calculateDeviceImpact(deviceCount) {
   let values = { socialMedia: 20, work: 50, videos: 100, games: 150 };
 
   if (deviceCount <= 4) {
-    values = { socialMedia: 10, work: 30, videos: 70, games: 100 };
+    values = { socialMedia: 200, work: 200, videos: 100, games: 200 };
   } else if (deviceCount > 4 && deviceCount <= 7) {
-    values = { socialMedia: 15, work: 40, videos: 85, games: 120 };
+    values = { socialMedia: 300, work: 200, videos: 100, games: 100 };
   } else if (deviceCount > 7) {
-    values = { socialMedia: 20, work: 50, videos: 100, games: 150 };
+    values = { socialMedia: 400, work: 200, videos: 100, games: 100 };
   }
 
   return values;
