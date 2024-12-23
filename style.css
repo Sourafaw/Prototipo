@@ -1105,7 +1105,12 @@ background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50
     margin-top: 10px;
     margin-bottom: 10vw;
   }
-
+  
+ /* ---------------------- mapa --------------------- */
+  .map iframe{
+    height: 600px; /* Faz o mapa ocupar a altura total da tela */
+    
+  }
   /* ---------------------- planos ------------------------ */
 
   .card-carousel {
