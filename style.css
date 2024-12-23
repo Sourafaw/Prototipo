@@ -254,7 +254,7 @@ video {
 
 .card-tbr h2 {
   margin-bottom: 10px;
-  color: #333;
+  color: #020024;
   font-size: 2.8vh;
 }
 
@@ -262,7 +262,7 @@ video {
   display: block;
   margin-top: 6px;
   font-weight: bold;
-  color: black;
+  color: #020024;
   font-size: 2vh;
 }
 
@@ -278,11 +278,14 @@ video {
 button#submitBtn {
   margin-top: 10px;
   padding: 6px;
-  background-color: #cddc39;
-  color: #333;
+  background-color: #020024;
+  color: #fff;
   border: none;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 15px;
+  width: 80px;
+  
  
   
 }
@@ -1098,12 +1101,18 @@ input[type="range"] {
   }
 
   .carosel_planos {
-    height: 580px; /* Defina a altura fixa ou deixe dinâmica se necessário */
+    max-height: 780px; /* Defina a altura fixa ou deixe dinâmica se necessário */
     overflow: hidden; /* Garante que o conteúdo não transborde */
   }
 
   #title_planos{
     font-size: 6vw;
+  }
+
+  .img_slid_carosel{
+    max-width: 45px;
+    
+    
   }
   /* ---------------------- Velocidade ideal -------------------- */
 
