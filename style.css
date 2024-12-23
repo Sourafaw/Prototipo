@@ -828,6 +828,33 @@ input[type="range"] {
   background-color: #020024;
 }
 
+/* mapa */
+.map iframe{
+  height: 400px; /* Faz o mapa ocupar a altura total da tela */
+  width: 100%;   /* Faz o mapa ocupar toda a largura */
+  border: none;
+
+  
+}
+
+.mascara{
+  background: rgb(22,32,91);
+background: linear-gradient(34deg, rgba(22,32,91,0.4) 0%, rgba(60,60,181,0.4) 50%, rgba(11,114,135,0.4) 100%); 
+  z-index: 88;
+  height: 400px;
+  width: 85%;
+  position: absolute;
+  pointer-events: none;
+  
+}
+
+#titulo_atend {
+  color: blue;
+  font-size: var(--fonsztitle-font-size);
+  margin-top: 34px;
+  text-align: center;
+}
+
 /*---------------------feedebeck----------------------*/
 
 .hidden{
