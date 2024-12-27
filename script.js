@@ -32,16 +32,18 @@ function calculateSpeed() {
 document.getElementById("socialMedia").checked = true;
 document.getElementById("socialMedia").disabled = true;
 
+
+
 // Função para calcular impacto baseado no número de dispositivos
 function calculateDeviceImpact(deviceCount) {
   let values = { socialMedia: 20, work: 50, videos: 100, games: 150 };
 
   if (deviceCount <= 4) {
-    values = { socialMedia: 200, work: 200, videos: 100, games: 200 };
+    values = { socialMedia: 200, work: 100, videos: 100, games: 100 };
   } else if (deviceCount > 4 && deviceCount <= 7) {
-    values = { socialMedia: 300, work: 200, videos: 100, games: 100 };
+    values = { socialMedia: 300, work: 200, videos: 100, games: 200 };
   } else if (deviceCount > 7) {
-    values = { socialMedia: 400, work: 200, videos: 100, games: 100 };
+    values = { socialMedia: 400, work: 100, videos: 100, games: 200 };
   }
 
   return values;
